@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <title>
+            IDE
+        </title>
+        <meta charset="utf-8"/>
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="css/estilos.css" rel="stylesheet"/>
+        <link href="icomoon/style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="row">
+            <div class="d-none d-sm-none d-md-block col-1 col_buttons" id="columna_botones">
+                <div class="logo" draggable="false">
+                    <img class="img-logo" draggable="false" src="img/white-logo.png"/>
+                </div>
+                <a class="nav-link button" draggable="false" href="#" onclick="descargarArchivo()">
+                    Guardar
+                </a>
+            </div>
+            <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 columna_codigo_claro" id="col_code_editor">
+                <div class="row">
+                    <div class="col-1 columna_numero_linea_codigo_claro">
+                        <div class="numero_linea_codigo_claro" id="numero_lineas_codigo">
+                            <div>
+                                1
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-11 contenedor_area_codigo_claro">
+                        <div autocomplete="off" class="area_codigo_claro" contenteditable="true" id="codeinput" onkeydown="onKeyDown(this)" onkeyup="onKeyUp(this)" onmouseup="onMouseUp(this)" spellcheck="false" wrap="logic">
+                            <div class="linea_codigo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 d-none d-sm-none d-md-block col-right">
+                <div class="row area_archivos_proyecto_claro" id="archivos">
+                    <p>
+                        Area de archivos del proyecto
+                    </p>
+                </div>
+                <div class="row area_compilacion_claro" id="compilacion">
+                    <p>
+                        Area de salida de compilacion de codigo
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="fixed-bottom barra_inferior_claro" id="herramientas">
+            <label class="toggle" data-placement="top" data-toggle="tooltip" title="Apariencia">
+                <input onclick="cambioTema(this)" type="checkbox">
+                    <span class="roundbutton">
+                    </span>
+                </input>
+            </label>
+        </div>
+        <script src="js/jquery.js">
+        </script>
+        <script src="js/bootstrap.bundle.min.js">
+        </script>
+        <script src="js/bootstrap.min.js">
+        </script>
+        <script src="js/funciones.js" type="text/javascript">
+        </script>
+    </body>
+</html>
